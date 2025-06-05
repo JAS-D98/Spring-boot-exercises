@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/cloud_vendor
+    username: postgres
+    # password: password to database
+
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+# Jpa settings
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        use_sql_comments: true
+    show-sql: true
